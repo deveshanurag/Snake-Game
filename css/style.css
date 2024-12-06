@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background: url("../bg.jpeg");   
+  /* important     */
+  min-height: 100vh;
+  background-size: 100vw, 100vh;
+  background-repeat: no-repeat;
+  /* yadi image repeate ho rha h to nahi hoga */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board{
+    background: linear-gradient(#740f0f,#121e5c);
+    /* linear gradient me ye hota hai ki two color ka use kr sakte ho */
+    width: 90vmin;
+    /* vh and vw me jo bhi chota hoga vmin hoga and jo max hoga o vmax hoga */
+    height: 92vmin;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+  background-color: white;
+  border: .25vmin dotted black;
+  border-radius: 12px;
+}
+.food{
+  background: linear-gradient(red,orange);
+  border: .25vmin solid black;
+  border-radius: 80px;
+  
+
+}
+.snake{
+  background-color: black;
+  border: .25vmin solid white;
+  border-radius: 12px;
+}
+#score{
+  display: flex;
+  background-color: green;
+  width: 24vmin;
+  height: 26vmin;
+}
+#high_score{
+  display: inline;
+  background-color: red;
+  width: 24vmin;
+  height: 26vmin;
+}
